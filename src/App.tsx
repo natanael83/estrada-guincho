@@ -91,7 +91,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/60 to-transparent z-10"></div>
         <img
-          src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2000&auto=format&fit=crop"
+          src="/assets/hero.png"
           alt="Socorro de guincho em rodovia"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -209,7 +209,7 @@ const WhyUs = () => {
         <div className="relative">
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
           <img
-            src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe263?q=80&w=1000&auto=format&fit=crop"
+            src="/assets/hero-bg.jpg"
             alt="Nossa frota"
             className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-video lg:aspect-square"
             referrerPolicy="no-referrer"
@@ -296,7 +296,7 @@ const Contact = () => {
         >
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="https://images.unsplash.com/photo-1599423161099-e9366df65c81?q=80&w=600&auto=format&fit=crop" 
+              src="/assets/transporte.jpg" 
               alt="Serviço de guincho" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -304,7 +304,7 @@ const Contact = () => {
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=600&auto=format&fit=crop" 
+              src="/assets/transporte.jpg" 
               alt="Transporte de veículos" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -312,7 +312,7 @@ const Contact = () => {
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="https://images.unsplash.com/photo-1621252179027-94459d278660?q=80&w=600&auto=format&fit=crop" 
+              src="/assets/mecanico.jpg" 
               alt="Socorro mecânico" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -320,7 +320,7 @@ const Contact = () => {
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=600&auto=format&fit=crop" 
+              src="/assets/atendimento.jpg" 
               alt="Atendimento 24h" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -335,7 +335,7 @@ const Contact = () => {
 const Footer = () => {
   return (
     <footer className="bg-background-dark text-slate-400 py-16 px-4 md:px-10 lg:px-20 border-t border-white/5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div className="space-y-6">
           <div className="flex items-center gap-3 text-white">
             <Truck className="w-8 h-8" />
@@ -375,17 +375,6 @@ const Footer = () => {
               <span>contato@estradaguincho.com.br</span>
             </li>
           </ul>
-        </div>
-        <div className="hidden md:block">
-          <h5 className="text-white font-bold mb-6">Mapa de Atendimento</h5>
-          <div className="w-full h-40 rounded-xl overflow-hidden grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
-            <img
-              src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop"
-              alt="Mapa de atendimento"
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-          </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
