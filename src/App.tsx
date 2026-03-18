@@ -41,7 +41,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="tel:0800123456"
+            href="tel:69984322802"
             className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2"
           >
             <PhoneCall className="w-4 h-4" />
@@ -71,7 +71,7 @@ const Navbar = () => {
               <a href="#trust" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Por que nós?</a>
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Contato</a>
               <a
-                href="tel:0800123456"
+                href="tel:69984322802"
                 className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4"
               >
                 <PhoneCall className="w-4 h-4" />
@@ -159,7 +159,7 @@ const Services = () => {
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-3">Nossas Soluções</h2>
           <h3 className="text-3xl md:text-4xl font-black mb-6">Soluções Completas de Assistência</h3>
-          <p className="text-slate-600 text-lg">Oferecemos suporte total para seu veículo com agilidade, equipamentos modernos e profissionais treinados.</p>
+          <p className="text-slate-600 text-lg">Oferecemos suporte total para seu veículo com agilidade.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
@@ -188,7 +188,7 @@ const WhyUs = () => {
   const benefits = [
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Disponibilidade 24/7",
+      title: "Disponibilidade",
       description: "Estamos prontos para atender você a qualquer hora do dia ou da noite, inclusive feriados."
     },
     {
@@ -199,7 +199,7 @@ const WhyUs = () => {
     {
       icon: <CreditCard className="w-6 h-6" />,
       title: "Preço Justo e Transparente",
-      description: "Orçamentos honestos sem taxas escondidas. Aceitamos cartões, Pix e convênios."
+      description: "Orçamentos honestos sem taxas escondidas. Aceitamos cartões de Debito, Credito e Pix."
     }
   ];
 
@@ -209,7 +209,7 @@ const WhyUs = () => {
         <div className="relative">
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
           <img
-            src="/assets/hero-bg.jpg"
+            src="/assets/hero.jpg"
             alt="Nossa frota"
             className="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-video lg:aspect-square"
             referrerPolicy="no-referrer"
@@ -296,7 +296,7 @@ const Contact = () => {
         >
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="/assets/transporte.jpg" 
+              src="/assets/transporte.webp" 
               alt="Serviço de guincho" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -304,15 +304,15 @@ const Contact = () => {
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="/assets/transporte.jpg" 
-              alt="Transporte de veículos" 
+              src="/assets/troca de bateria.webp" 
+              alt="Troca de bateria" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
             />
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="/assets/mecanico.jpg" 
+              src="/assets/mecanico.jpeg" 
               alt="Socorro mecânico" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
@@ -320,7 +320,7 @@ const Contact = () => {
           </div>
           <div className="group overflow-hidden rounded-2xl aspect-square shadow-xl border border-white/10">
             <img 
-              src="/assets/atendimento.jpg" 
+              src="/assets/atendimento.jpeg" 
               alt="Atendimento 24h" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
