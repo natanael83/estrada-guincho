@@ -279,7 +279,7 @@ const Contact = () => {
               className="bg-white/10 p-4 rounded-lg flex items-center gap-3 hover:bg-white/20 transition-all border border-white/5"
             >
               <PhoneCall className="w-5 h-5 text-green-400" />
-              <span className="text-xl font-bold">(69) 98432-2802</span>
+              <span className="text-xl font-bold">(55) 69984322802</span>
             </a>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/10 pt-6 mt-2">
               <div className="bg-black/20 p-3 rounded-xl border border-white/5 flex flex-col gap-1">
