@@ -92,6 +92,14 @@ const Navbar = () => {
 };
 
 const Hero = () => {
+  const [userName, setUserName] = useState('');
+
+  const getWaLink = () => {
+    const baseText = "Olá, gostaria de solicitar um guincho.";
+    const namePart = userName ? `Meu nome é ${userName}. ` : "";
+    return `https://api.whatsapp.com/send?phone=5569984322802&text=${encodeURIComponent(namePart + baseText)}`;
+  };
+
   return (
     <section id="home" className="relative min-h-[600px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -120,16 +128,35 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-slate-200 font-medium">
             Rapidez e segurança para você não ficar na mão. Atendimento especializado em qualquer lugar, a qualquer hora.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <motion.a 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
-              className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 cursor-pointer"
-            >
-              <Truck className="w-6 h-6" />
-              Chamar Guincho Agora
-            </motion.a>
+          
+          <div className="space-y-4 pt-4">
+            {/* Campo de Nome */}
+            <div className="max-w-sm">
+              <label className="block text-white/70 text-sm font-bold mb-2 ml-1 italic">
+                Olá! Qual o seu nome? (Opcional)
+              </label>
+              <input 
+                type="text" 
+                placeholder="Ex: João da Silva" 
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                className="w-full bg-white/10 backdrop-blur border border-white/20 rounded-xl px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all shadow-lg"
+              />
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={getWaLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 cursor-pointer"
+              >
+                <Truck className="w-6 h-6" />
+                Chamar Guincho Agora
+              </motion.a>
+            </div>
           </div>
         </motion.div>
       </div>
@@ -271,13 +298,6 @@ const Contact = () => {
               <MapPin className="w-5 h-5" />
               <span>Atendimento em toda Vilhena e Região</span>
             </div>
-            <a 
-              href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
-              className="bg-white/10 p-4 rounded-lg flex items-center gap-3 hover:bg-white/20 transition-all border border-white/5"
-            >
-              <PhoneCall className="w-5 h-5 text-green-400" />
-              <span className="text-xl font-bold">(55) 69984322802</span>
-            </a>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/10 pt-6 mt-2">
               <div className="bg-black/20 p-3 rounded-xl border border-white/5 flex flex-col gap-1">
                 <div className="flex items-center gap-2 mb-1">
