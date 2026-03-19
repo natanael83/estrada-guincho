@@ -41,7 +41,9 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="tel:69984322802"
+            href="https://wa.me/5569984322802"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2"
           >
             <PhoneCall className="w-4 h-4" />
@@ -71,7 +73,9 @@ const Navbar = () => {
               <a href="#trust" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Por que nós?</a>
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Contato</a>
               <a
-                href="tel:69984322802"
+                href="https://wa.me/5569984322802"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4"
               >
                 <PhoneCall className="w-4 h-4" />
@@ -115,10 +119,15 @@ const Hero = () => {
             Rapidez e segurança para você não ficar na mão. Atendimento especializado em qualquer lugar, a qualquer hora.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-primary/20">
+            <a 
+              href="https://wa.me/5569984322802"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-primary/20"
+            >
               <Truck className="w-6 h-6" />
               Chamar Guincho Agora
-            </button>
+            </a>
             <button className="bg-white/10 backdrop-blur text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
               Ver Preços
             </button>
