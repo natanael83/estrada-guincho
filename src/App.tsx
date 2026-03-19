@@ -41,15 +41,17 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a
-            href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+          <motion.a 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2"
+            className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2 cursor-pointer"
           >
-            <PhoneCall className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4" />
             Chamar Agora
-          </a>
+          </motion.a>
           <button
             className="md:hidden text-primary"
             onClick={() => setIsOpen(!isOpen)}
@@ -73,13 +75,14 @@ const Navbar = () => {
               <a href="#services" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Serviços</a>
               <a href="#trust" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Por que nós?</a>
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Contato</a>
-              <a
-                href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
-                className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4"
+              <motion.a 
+                whileTap={{ scale: 0.98 }}
+                href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+                className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4 cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
                 Chamar Agora
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         )}
@@ -118,13 +121,15 @@ const Hero = () => {
             Rapidez e segurança para você não ficar na mão. Atendimento especializado em qualquer lugar, a qualquer hora.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a 
-              href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
-              className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-primary/20"
+            <motion.a 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+              className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 cursor-pointer"
             >
               <Truck className="w-6 h-6" />
               Chamar Guincho Agora
-            </a>
+            </motion.a>
             <button className="bg-white/10 backdrop-blur text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
               Ver Preços
             </button>
@@ -340,18 +345,20 @@ const Contact = () => {
 
 const FloatingWA = () => {
   return (
-    <a
-      href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+    <motion.a
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group"
+      className="fixed bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20ba59] transition-colors flex items-center justify-center group cursor-pointer"
       aria-label="Chamar no WhatsApp"
     >
       <MessageCircle className="w-8 h-8" />
       <span className="absolute right-full mr-3 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">
         Chamar no WhatsApp
       </span>
-    </a>
+    </motion.a>
   );
 };
 
