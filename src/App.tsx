@@ -274,6 +274,13 @@ const Contact = () => {
               <MapPin className="w-5 h-5" />
               <span>Atendimento em toda Vilhena e Região</span>
             </div>
+            <a 
+              href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+              className="bg-white/10 p-4 rounded-lg flex items-center gap-3 hover:bg-white/20 transition-all border border-white/5"
+            >
+              <PhoneCall className="w-5 h-5 text-green-400" />
+              <span className="text-xl font-bold">(69) 98432-2802</span>
+            </a>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/10 pt-6 mt-2">
               <div className="bg-black/20 p-3 rounded-xl border border-white/5 flex flex-col gap-1">
                 <div className="flex items-center gap-2 mb-1">
@@ -403,6 +410,10 @@ const Footer = () => {
             <li className="flex gap-3">
               <Mail className="w-5 h-5 text-primary" />
               <span>contato@estradaguincho.com.br</span>
+            </li>
+            <li className="flex gap-3">
+              <PhoneCall className="w-5 h-5 text-primary" />
+              <a href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho." className="hover:text-primary transition-colors">(69) 98432-2802</a>
             </li>
           </ul>
         </div>
