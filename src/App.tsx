@@ -17,7 +17,8 @@ import {
   Share2,
   Shield,
   Flame,
-  LifeBuoy
+  LifeBuoy,
+  MessageCircle
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -41,7 +42,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://wa.me/5569984322802"
+            href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2"
@@ -73,12 +74,10 @@ const Navbar = () => {
               <a href="#trust" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Por que nós?</a>
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Contato</a>
               <a
-                href="https://wa.me/5569984322802"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
                 className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4"
               >
-                <PhoneCall className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
                 Chamar Agora
               </a>
             </div>
@@ -120,9 +119,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a 
-              href="https://wa.me/5569984322802"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
               className="bg-primary text-white px-8 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-primary/20"
             >
               <Truck className="w-6 h-6" />
@@ -341,6 +338,23 @@ const Contact = () => {
   );
 };
 
+const FloatingWA = () => {
+  return (
+    <a
+      href="https://wa.me/5569984322802?text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group"
+      aria-label="Chamar no WhatsApp"
+    >
+      <MessageCircle className="w-8 h-8" />
+      <span className="absolute right-full mr-3 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">
+        Chamar no WhatsApp
+      </span>
+    </a>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="bg-background-dark text-slate-400 py-16 px-4 md:px-10 lg:px-20 border-t border-white/5">
@@ -408,6 +422,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingWA />
     </div>
   );
 }
