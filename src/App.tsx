@@ -130,9 +130,6 @@ const Hero = () => {
               <Truck className="w-6 h-6" />
               Chamar Guincho Agora
             </motion.a>
-            <button className="bg-white/10 backdrop-blur text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
-              Ver Preços
-            </button>
           </div>
         </motion.div>
       </div>
