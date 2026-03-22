@@ -3,12 +3,12 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC0kSIQDot90mO49s3gXpu4V4UUIXZVlSk",
-  authDomain: "estradaguincho.firebaseapp.com",
-  projectId: "estradaguincho",
-  storageBucket: "estradaguincho.firebasestorage.app",
-  messagingSenderId: "628334867557",
-  appId: "1:628334867557:web:a317226f60f40cd2e1c28c"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase

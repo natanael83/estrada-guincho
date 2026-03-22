@@ -44,7 +44,7 @@ const Navbar = () => {
           <motion.a 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+            href="https://api.whatsapp.com/send?phone=5569900000000&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all items-center gap-2 cursor-pointer"
@@ -77,7 +77,7 @@ const Navbar = () => {
               <a href="#contact" onClick={() => setIsOpen(false)} className="text-sm font-semibold px-4 py-2 hover:bg-primary/5 rounded-lg">Contato</a>
               <motion.a 
                 whileTap={{ scale: 0.98 }}
-                href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+                href="https://api.whatsapp.com/send?phone=5569900000000&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
                 className="flex bg-primary text-white px-6 py-3 rounded-lg font-bold text-center justify-center items-center gap-2 mx-4 cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -97,7 +97,7 @@ const Hero = () => {
   const getWaLink = () => {
     const baseText = "Olá, gostaria de solicitar um guincho.";
     const namePart = userName ? `Meu nome é ${userName}. ` : "";
-    return `https://api.whatsapp.com/send?phone=5569984322802&text=${encodeURIComponent(namePart + baseText)}`;
+    return `https://api.whatsapp.com/send?phone=5569900000000&text=${encodeURIComponent(namePart + baseText)}`;
   };
 
   return (
@@ -372,7 +372,7 @@ const FloatingWA = () => {
     <motion.a
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
+      href="https://api.whatsapp.com/send?phone=5569900000000&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[999] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20ba59] transition-colors flex items-center justify-center group cursor-pointer"
@@ -430,7 +430,7 @@ const Footer = () => {
             </li>
             <li className="flex gap-3">
               <PhoneCall className="w-5 h-5 text-primary" />
-              <a href="https://api.whatsapp.com/send?phone=5569984322802&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho." className="hover:text-primary transition-colors">(69) 98432-2802</a>
+              <a href="https://api.whatsapp.com/send?phone=5569900000000&text=Olá,%20gostaria%20de%20solicitar%20um%20guincho." className="hover:text-primary transition-colors">(69) 90000-0000</a>
             </li>
           </ul>
         </div>
